@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/src/images/ralph-favicon.jpg" type="image/x-icon">
+    <title>Detona Ralph</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu_time menu-itens">
+                <h2 class="menu_game time">time left</h2>
+                <h2 id="time_left" class="points">0</h2>
+            </div>
+            <div class="menu_score menu-itens">
+                <h2 class="menu_game score">your score</h2>
+                <h2 id="score" class="points">0</h2>
+            </div>
+            <div class="menu_lives menu-itens">
+                <div class="heart"></div>
+                <h2 id="lives" class="points">x3</h2>
+            </div>
+
+            <div>
+                <button id="pauseBtn">
+                    <h1 class="menu_game pause"><i id="pauseIcon" class="fa-solid fa-pause"></i></h1>
+                </button>
+                <div id="pauseOverlay">
+                    <span>Jogo em Pausa</span>
+                </div>
+            </div>
+        </div>
+        <div class="painel">
+            <div class="painel-row">
+                <div class="square enemy" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+            <div class="painel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <div class="painel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+    </div>
+    <div id="gameOverModal">
+        <div class="gameOverContent">
+            <h2 id="gameOverText"></h2>
+            <button onclick="location.reload()">Jogar novamente</button>
+        </div>
+    </div>
+    <script defer src="/src/scripts/engine.js"></script>
+    <script src="https://kit.fontawesome.com/67c33d417f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
