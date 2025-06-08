@@ -109,7 +109,9 @@
 }
 
 button{
+    position: relative;
     background-color: transparent;
+    z-index: 300000;
 }
 
 .fa-solid{
